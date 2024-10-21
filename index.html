@@ -1,45 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo à página de acesso</title>
     <style>
         body {
-            background-color: white;
+            background-color: #fff;
+            color: #000;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
         }
+
         h1 {
-            margin-bottom: 50px;
+            text-align: center;
+            font-size: 2.5em;
         }
-        .language-choice {
+
+        .flags {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            margin-top: 20px;
         }
-        .language-choice img {
+
+        .flags img {
             width: 100px;
-            height: 100px;
+            margin: 0 15px;
             cursor: pointer;
+        }
+
+        .flags img:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .description {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
-
-    <div>
-        <h1>Bem-vindo à página de acesso</h1>
-        <div class="language-choice">
-            <a href="pt.html"><img src="br-flag.png" alt="Português"></a>
-            <a href="en.html"><img src="us-flag.png" alt="English"></a>
-            <a href="es.html"><img src="es-flag.png" alt="Español"></a>
-        </div>
+    <h1>Bem-vindo à página de acesso</h1>
+    <div class="flags">
+        <a href="pt-br.html"><img src="brazil-flag.png" alt="Português Brasileiro"></a>
+        <a href="en-us.html"><img src="us-flag.png" alt="Inglês Americano"></a>
+        <a href="es.html"><img src="spain-flag.png" alt="Espanhol"></a>
     </div>
-
+    <div class="description">
+        <p>Acesse o conteúdo disponível em breve: Telegram e Biblioteca.</p>
+    </div>
 </body>
 </html>
