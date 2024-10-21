@@ -34,20 +34,46 @@
             text-align: center;
         }
 
-        .options img {
-            width: 60px;
-            margin-bottom: 10px;
-        }
-
-        .options p {
-            font-size: 1.5em;
-            margin: 0;
-        }
-
         .options a {
             text-decoration: none;
             color: #000;
             font-size: 1.5em;
+        }
+
+        /* Estilo para o ícone do Telegram */
+        .telegram-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .telegram-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: #fff; /* Cor do aviãozinho */
+        }
+
+        /* Estilo para o ícone da Biblioteca */
+        .library-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .library-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: #fff; /* Cor das páginas */
         }
 
         .options a:hover {
@@ -59,12 +85,20 @@
     <h1>Você está no conteúdo em Português</h1>
     <div class="options">
         <div>
-            <img src="telegram-icon.png" alt="Telegram">
-            <p><a href="https://t.me/+wSjq-CQUbrUxZTQx>Telegram</a></p>
+            <a href="https://t.me/+-ZS3F1IcFK5jM2Ex">
+                <div class="telegram-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.6 2.4l-19.8 8.1c-1.1.4-1.1 1-.2 1.3l4.9 1.7 1.9 5.9c.2.6.4.8.8.8s.7-.2 1-.5l3.3-3.1 4.5 3.3c.8.5 1.5.3 1.8-.7l3.6-17.5c.3-1.4-.5-2-1.6-1.5z"/></svg>
+                </div>
+                <p>Telegram</p>
+            </a>
         </div>
         <div>
-            <img src="library-icon.png" alt="Biblioteca">
-            <p><a href="#">Biblioteca (Em breve)</a></p>
+            <a href="#">
+                <div class="library-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2v16h13v-16h-13zm11 14h-9v-12h9v12zm2-15v18h-16v-18h-3v22h22v-22h-3z"/></svg>
+                </div>
+                <p>Biblioteca (Em breve)</p>
+            </a>
         </div>
     </div>
 </body>
