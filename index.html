@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-vindo à página de acesso</title>
+    <title>Página de Acesso</title>
     <style>
         body {
             background-color: #fff;
-            color: #000;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -19,65 +18,121 @@
 
         h1 {
             text-align: center;
-            font-size: 2.5em;
+            font-size: 2em;
             margin-bottom: 20px;
         }
 
-        h2 {
-            text-align: center;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-
-        .flags {
+        .language-selection {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
-        .flags div {
-            margin: 0 20px;
+        .language-selection div {
+            margin: 0 15px;
             text-align: center;
         }
 
-        .flags img {
-            width: 80px;
-            cursor: pointer;
-        }
-
-        .flags p {
-            margin-top: 10px;
+        .language-selection div a {
             font-size: 1.2em;
+            text-decoration: none;
+            color: #000;
+            display: flex;
+            align-items: center;
         }
 
-        .flags img:hover {
-            transform: scale(1.1);
-            transition: transform 0.2s ease-in-out;
+        .language-selection div a span {
+            margin-left: 8px;
+        }
+
+        .flag {
+            font-size: 2em;
+        }
+
+        .search-bar {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        input[type="search"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.2em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .content div {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content div a {
+            text-decoration: none;
+            font-size: 1.5em;
+            color: #000;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .telegram-icon,
+        .library-icon {
+            font-size: 2.5em;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
+
     <h1>Bem-vindo à página de acesso</h1>
-    <h2>Escolha o seu idioma</h2>
-    <div class="flags">
+
+    <div class="language-selection">
         <div>
             <a href="pt-br.html">
-                <img src="brazil-flag.png" alt="Português Brasileiro">
-                <p>Português Brasileiro</p>
+                <span class="flag">🇧🇷</span><span>Português Brasileiro</span>
             </a>
         </div>
         <div>
             <a href="en-us.html">
-                <img src="us-flag.png" alt="Inglês Americano">
-                <p>Inglês Americano</p>
+                <span class="flag">🇺🇸</span><span>Inglês Americano</span>
             </a>
         </div>
         <div>
             <a href="es.html">
-                <img src="spain-flag.png" alt="Espanhol">
-                <p>Espanhol</p>
+                <span class="flag">🇪🇸</span><span>Espanhol</span>
             </a>
         </div>
     </div>
+
+    <div class="search-bar">
+        <input type="search" placeholder="Pesquise no site...">
+    </div>
+
+    <div class="content">
+        <div>
+            <a href="https://t.me/+-ZS3F1IcFK5jM2Ex">
+                <span class="telegram-icon">✈️</span> Telegram
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <span class="library-icon">📚</span> Biblioteca (Em breve)
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
