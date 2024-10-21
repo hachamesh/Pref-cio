@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-vindo à página em Português</title>
+    <title>Conteúdo em Português</title>
     <style>
         body {
             background-color: #fff;
@@ -20,31 +20,52 @@
         h1 {
             text-align: center;
             font-size: 2.5em;
+            margin-bottom: 20px;
         }
 
-        .links {
+        .options {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             margin-top: 20px;
         }
 
-        .links a {
-            text-decoration: none;
-            color: blue;
-            font-size: 1.5em;
-            margin: 10px 0;
+        .options div {
+            margin: 0 20px;
+            text-align: center;
         }
 
-        .links a:hover {
-            color: darkblue;
+        .options img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+
+        .options p {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .options a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.5em;
+        }
+
+        .options a:hover {
+            color: blue;
         }
     </style>
 </head>
 <body>
-    <h1>Bem-vindo ao seu conteúdo em Português</h1>
-    <div class="links">
-        <a href="https://t.me/seuTelegram">Telegram</a>
-        <a href="#">Biblioteca (Em breve)</a>
+    <h1>Você está no conteúdo em Português</h1>
+    <div class="options">
+        <div>
+            <img src="telegram-icon.png" alt="Telegram">
+            <p><a href="https://t.me/seuTelegram">Telegram</a></p>
+        </div>
+        <div>
+            <img src="library-icon.png" alt="Biblioteca">
+            <p><a href="#">Biblioteca (Em breve)</a></p>
+        </div>
     </div>
 </body>
 </html>
