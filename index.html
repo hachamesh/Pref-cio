@@ -20,6 +20,13 @@
         h1 {
             text-align: center;
             font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 20px;
         }
 
         .flags {
@@ -28,33 +35,49 @@
             margin-top: 20px;
         }
 
+        .flags div {
+            margin: 0 20px;
+            text-align: center;
+        }
+
         .flags img {
-            width: 100px;
-            margin: 0 15px;
+            width: 80px;
             cursor: pointer;
+        }
+
+        .flags p {
+            margin-top: 10px;
+            font-size: 1.2em;
         }
 
         .flags img:hover {
             transform: scale(1.1);
             transition: transform 0.2s ease-in-out;
         }
-
-        .description {
-            margin-top: 30px;
-            text-align: center;
-            font-size: 1.2em;
-        }
     </style>
 </head>
 <body>
     <h1>Bem-vindo à página de acesso</h1>
+    <h2>Escolha o seu idioma</h2>
     <div class="flags">
-        <a href="pt-br.html"><img src="brazil-flag.png" alt="Português Brasileiro"></a>
-        <a href="en-us.html"><img src="us-flag.png" alt="Inglês Americano"></a>
-        <a href="es.html"><img src="spain-flag.png" alt="Espanhol"></a>
-    </div>
-    <div class="description">
-        <p>Acesse o conteúdo disponível em breve: Telegram e Biblioteca.</p>
+        <div>
+            <a href="pt-br.html">
+                <img src="brazil-flag.png" alt="Português Brasileiro">
+                <p>Português Brasileiro</p>
+            </a>
+        </div>
+        <div>
+            <a href="en-us.html">
+                <img src="us-flag.png" alt="Inglês Americano">
+                <p>Inglês Americano</p>
+            </a>
+        </div>
+        <div>
+            <a href="es.html">
+                <img src="spain-flag.png" alt="Espanhol">
+                <p>Espanhol</p>
+            </a>
+        </div>
     </div>
 </body>
 </html>
